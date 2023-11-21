@@ -2,21 +2,21 @@ use std::fs;
 use std::path::Path;
 
 fn main() {
-    let path = String::from(format!("C:/Users/{}/AppData/Local/Temp", whoami::username()));
+    let path = String::from(format!("C:/Users/{}/AppData/Local/Temp", whoami::username())); // user temp
     clean(path);
-    let path = String::from("C:/Windows/Temp");
+    let path = String::from("C:/Windows/Temp"); // windows temp
     clean(path);
-    let path = String::from("C:/Windows/LiveKernelReports");
+    let path = String::from("C:/Windows/LiveKernelReports"); // kernel reports
     clean(path);
-    let path = String::from("C:/Windows/Downloaded Program Files");
+    let path = String::from("C:/Windows/Downloaded Program Files"); // trash for internet explorer, may also contain viruses
     clean(path);
-    let path = String::from("C:/Windows/SoftwareDistribution");
+    let path = String::from("C:/Windows/SoftwareDistribution"); // old windows updates
     clean(path);
-    let path = String::from("C:/Windows/Minidump");
+    let path = String::from("C:/Windows/Minidump"); // dumps
     clean(path);
-    let path = String::from("C:/Windows/Prefetch");
+    let path = String::from("C:/Windows/Prefetch"); // only trash
     clean(path);
-    let path = String::from("C:/Windows/Logs");
+    let path = String::from("C:/Windows/Logs"); // logs
     clean(path);
 }
 
