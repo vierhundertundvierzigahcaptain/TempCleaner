@@ -6,6 +6,18 @@ fn main() {
     clean(path);
     let path = String::from("C:/Windows/Temp");
     clean(path);
+    let path = String::from("C:/Windows/LiveKernelReports");
+    clean(path);
+    let path = String::from("C:/Windows/Downloaded Program Files");
+    clean(path);
+    let path = String::from("C:/Windows/SoftwareDistribution");
+    clean(path);
+    let path = String::from("C:/Windows/Minidump");
+    clean(path);
+    let path = String::from("C:/Windows/Prefetch");
+    clean(path);
+    let path = String::from("C:/Windows/Logs");
+    clean(path);
 }
 
 fn clean(path: String) {
